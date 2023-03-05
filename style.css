@@ -12,11 +12,11 @@
 }
 .fa-brands.fa-facebook:hover{
     --bs-text-opacity: 1;
-    color:#240df5 !important;
+    color:#1602ce !important;
 }
 .fa-brands.fa-instagram:hover{
   --bs-text-opacity: 1;
-  color:#ff0055f3 !important;
+  color:#ff006af3 !important;
 }
 .fa-brands.fa-twitter:hover{
   --bs-text-opacity: 1;
@@ -28,8 +28,5 @@
 }
 .fa-brands.fa-linkedin:hover{
   --bs-text-opacity: 1;
-  color:#4895ec !important;
+  color:#0a66c2 !important;
 }
-
-
-
