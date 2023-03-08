@@ -46,3 +46,11 @@ h1.intro{
   padding-top: 15%;
   font-size: 3rem;
 }
+
+/*Página de logueo*/
+.login{
+  height: 80vh;
+}
+.formulario-login{
+  margin-top: 10%;
+}

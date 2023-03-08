@@ -8,18 +8,19 @@
     <!--CSS de Bootstrap-->
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="style.css">
-    <!--Fuentes-->
+    <!--Fuentes GoogleFont-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,300;1,400;1,500&display=swap" rel="stylesheet">
-    <!--FontAwesome-->
+    <!--Iconos FontAwesome-->
     <script src="https://kit.fontawesome.com/45a67b8e7d.js" crossorigin="anonymous"></script>
     
 <body>
     <!--esto es un comentario en html-->
+    <!--Barra de navegación-->
     <nav class="navbar navbar-expand-lg bg-violet">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#">
+            <a class="navbar-brand" href="index.html">
                 <img src="/img/LogoAP.png" alt="Logo" class="w-25">
               </a>
               <ul class="list-group list-group-horizontal">
@@ -28,9 +29,9 @@
                 <li class="list-group-item"><a href="https://twitter.com" target="_blank"><i class="fa-brands fa-twitter text-white"></i></a></li>
                 <li class="list-group-item"><a href="https://github.com" target="_blank"><i class="fa-brands fa-github text-white"></i></a></li>
                 <li class="list-group-item"><a href="https://linkedin.com" target="_blank"><i class="fa-brands fa-linkedin text-white"></i></a></li>             
-                <li class="list-group-item"> <!--Botón de Login-->
-                    <!-- Botón que abre el Login -->
-                    <i data-bs-toggle="modal" data-bs-target="#loginModal" class="fa-solid fa-user text-white"></i>
+                <li class="list-group-item"> 
+                    <!-- Botón que envia al Login -->
+                    <a href="login.html"><i class="fa-solid fa-user text-white"></i></a>
                 </li>
               </ul>  
         </div>
@@ -95,7 +96,15 @@
       </div>
     </div>
   </div>
+    <!--Footer-->
+    <footer class="bg-black text-white text-center fs-6">
+      <div class="pt-3">
+        <p>&copy Copyright Yael Nmr 2023</p>          
+      </div>
+    </footer>
+   
     <!--JavaScript de Bootstrap-->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous">
+    </script>
 </body>
 </html>
