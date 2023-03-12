@@ -4,6 +4,7 @@
     font-family: 'Roboto', sans-serif;
 }
 
+/*Barra de navegación*/
 .bg-violet {
     background-color: #000000;
 }
@@ -30,6 +31,9 @@
   --bs-text-opacity: 1;
   color:#0a66c2 !important;
 }
+/**/
+
+/*Banner*/
 section.banner{
   background-image: url(img/fondo1.png);
   width: 100%;
@@ -39,8 +43,15 @@ section.banner{
   background-size: cover;
 }
 h1.intro{
-  padding-top: 15%;
-  font-size: 3rem;
+  padding-top: 10%;
+  font-size: 4rem;
+}
+/**/
+
+/*Presentación acerca de*/
+.acerca-de {
+  text-align: center;
+  padding: 0.4rem;
 }
 
 /*Página de logueo*/
