@@ -53,6 +53,28 @@ h1.intro{
   text-align: center;
   padding: 0.4rem;
 }
+/**/
+
+/*Sección Experiencia*/
+.kuma{
+  width: 150px;
+  height: 120px;
+  margin-left: auto;
+  margin-top: 5%;
+  margin-bottom: auto;
+  margin-right: auto;
+  border-style: solid;
+  border-color: #ad13cc;
+}
+/**/
+
+
+
+
+
+
+
+
 
 /*Página de logueo*/
 .login{
