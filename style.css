@@ -31,7 +31,7 @@
   --bs-text-opacity: 1;
   color:#0a66c2 !important;
 }
-/*Fin navbar*/
+            /*Fin navbar*/
 
 /*Banner*/
 section.banner{
@@ -46,44 +46,25 @@ h1.intro{
   padding-top: 10%;
   font-size: 4rem;
 }
-/*Fin Banner*/
+          /*Fin Banner*/
 
 /*Presentación acerca de*/
 .acerca-de {
   text-align: center;
   padding: 0.4rem;
 }
-/*Fin Presentación*/
+         /*Fin Presentación*/
 
 /*Sección Experiencia y Seccion Educación*/
 .card {
   margin: 10px 10px;
   border-style: solid;
-  box-shadow: 10px 10px grey;
+  box-shadow: 10px 10px #888181;
 }
-/*Fin seccion experiencia y educacion*/
-
-/*Página de logueo*/
-.login{
-  height: 80vh;
-}
-.formulario-login{
-  margin-top: 10%;
-}
-/*Fin login*/
-
-/*Botones Banner Modal, de redes, etc del Panel*/
-.admin{
-  font-size: 1.5rem;
-}
-.link{
-  text-decoration: none;
-  color: #000000;
-}
-/*Fin panel*/
+        /*Fin seccion experiencia y educacion*/
 
 /*Sección Habilidades*/
-      /*Estructura de los Circulos*/
+       /*Estructura de los Circulos*/
 body{
   font-family: 'Roboto', sans-serif;
 }
@@ -131,7 +112,16 @@ h1 {
     content: "%";
     font-weight: 600;
     color: #8b8b8b; }
-      /*Fin Estructura de los Circulos*/
+
+    @-webkit-keyframes colorload {
+      0% {
+        opacity: 0;
+        transform: rotate(0deg); }
+      100% {
+        opacity: 1;
+        transform: rotate(360deg); } 
+    }
+               /*Fin Estructura de los Circulos*/
  
       /*Los Circulos con habilidades incluidas*/    
   .progress-circle.progress-65:after { /*HTML*/
@@ -162,14 +152,51 @@ h1 {
     background-image: linear-gradient(90deg, #ebebeb 50%, transparent 50%, transparent), linear-gradient(93.6deg, #66b8ff 50%, #ebebeb 50%, #ebebeb); }
         /*Fin de los circulos con habilidades incluidas*/
 
-        /*Idiomas*/
+      /*Idiomas*/
   .progress-circle.progress-90:after {   /*INGLES*/
     background-image: linear-gradient(54deg, #66b8ff 50%, transparent 50%, transparent), linear-gradient(270deg, #66b8ff 50%, #ebebeb 50%, #ebebeb); }
 
-  .progress-circle.progress-5:after {   /*JAPON*/
+  .progress-circle.progress-3:after {   /*JAPONÉS*/
     background-image: linear-gradient(90deg, #ebebeb 50%, transparent 50%, transparent), linear-gradient(108deg, #66b8ff 50%, #ebebeb 50%, #ebebeb); }
-       /*Fin de idiomas*/
-  /*Fin de Sección Habilidades*/  
+      /*Fin de idiomas*/
+              /*Fin de Sección Habilidades*/  
 
 /*Sección Proyectos*/
+.cuadro-proyecto{
+  display: flex;
+  align-items: center;
+  justify-content: center; 
+}
+  /* Fin seccion proyectos*/
 
+  /*FOOTER*/
+  .footer {
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 1rem;
+    background-color: #efefef;
+    text-align: center;
+  }
+  /*Fin Footer*/
+
+
+
+/*Página LOGIN*/
+.login{
+  height: 80vh;
+}
+.formulario-login{
+  margin-top: 10%;
+}
+/*Fin login*/
+
+/*PANEL, Botones Banner Modal, de redes, etc del panel*/
+.admin{
+  font-size: 1.5rem;
+}
+.link{
+  text-decoration: none;
+  color: #000000;
+}
+/*Fin panel*/
