@@ -1,78 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Registro</title>
-    <!--CSS de Bootstrap-->
-    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="style.css">
-    <!--Fuentes GoogleFont-->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,300;1,400;1,500&display=swap" rel="stylesheet">
-    <!--Iconos FontAwesome-->
-    <script src="https://kit.fontawesome.com/45a67b8e7d.js" crossorigin="anonymous"></script>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registro</title>
+  <!--CSS de Bootstrap-->
+  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css">
+  <!--Fuentes GoogleFont-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,300;1,400;1,500&display=swap"
+    rel="stylesheet">
+  <!--Iconos FontAwesome-->
+  <script src="https://kit.fontawesome.com/45a67b8e7d.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
-    <nav class="navbar navbar-expand-lg bg-violet">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="index.html">
-                <img src="/img/LogoAP.png" alt="Logo" class="w-25">
-              </a>
-              <ul class="list-group list-group-horizontal">
-                <li class="list-group-item"><a href="https://facebook.com" target="_blank"><i class="fa-brands fa-facebook text-white"></i></a></li>
-                <li class="list-group-item"><a href="https://instagram.com" target="_blank"><i class="fa-brands fa-instagram text-white"></i></a></li>
-                <li class="list-group-item"><a href="https://twitter.com" target="_blank"><i class="fa-brands fa-twitter text-white"></i></a></li>
-                <li class="list-group-item"><a href="https://github.com" target="_blank"><i class="fa-brands fa-github text-white"></i></a></li>
-                <li class="list-group-item"><a href="https://linkedin.com" target="_blank"><i class="fa-brands fa-linkedin text-white"></i></a></li>             
-                <li class="list-group-item"> 
-                    <!-- Botón que envia al Login -->
-                    <a href="login.html"><i class="fa-solid fa-user text-white"></i></a>
-                </li>
-              </ul>  
+  <!--Barra de Navegación-->
+  <nav class="navbar navbar-expand-lg bg-violet">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html">
+        <img src="/img/LogoAP.png" alt="Logo" class="w-25">
+      </a>
+      <ul class="list-group list-group-horizontal">
+        <li class="list-group-item"><a href="https://facebook.com" target="_blank"><i
+              class="fa-brands fa-facebook text-white"></i></a></li>
+        <li class="list-group-item"><a href="https://instagram.com" target="_blank"><i
+              class="fa-brands fa-instagram text-white"></i></a></li>
+        <li class="list-group-item"><a href="https://twitter.com" target="_blank"><i
+              class="fa-brands fa-twitter text-white"></i></a></li>
+        <li class="list-group-item"><a href="https://github.com" target="_blank"><i
+              class="fa-brands fa-github text-white"></i></a></li>
+        <li class="list-group-item"><a href="https://linkedin.com" target="_blank"><i
+              class="fa-brands fa-linkedin text-white"></i></a></li>
+        <li class="list-group-item">
+          <!-- Botón que envia al Login -->
+          <a href="login.html"><i class="fa-solid fa-user text-white"></i></a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <!--Formulario de Registro-->
+  <section class="login">
+    <div class="container text-center">
+      <div class="row">
+        <div class="col-2">
         </div>
-      </nav>
-      <!--Formulario de Login-->
-      <section class="login">
-      <div class="container text-center">
-        <div class="row">
-          <div class="col-2">
-          </div>
-          <div class="col-8 formulario-login">
-            <div class="modal-body">
-                <form>
-                    <div class="mb-3">
-                      <label for="exampleInputEmail1" class="form-label">Email</label>
-                      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-                      <div id="emailHelp" class="form-text"></div>
-                    </div>
-                    <div class="mb-3">
-                      <label for="exampleInputPassword1" class="form-label">Contraseña</label>
-                      <input type="password" class="form-control" id="exampleInputPassword1">
-                     </div>                                
-                  </form>
-            </div>
-            <div class="modal-footer">
-                <button type="submit" class="btn btn-secondary">Registrarme</button>
+        <div class="col-8 formulario-registro">
+          <div class="modal-body">
+            <form>
+              <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">Email</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                <div id="emailHelp" class="form-text"></div>
               </div>
-              <small>¿Ya tenés una cuenta? <a href="login.html">¡Ingresá!</small></a>
+              <div class="mb-3">
+                <label for="exampleInputPassword1" class="form-label">Contraseña</label>
+                <input type="password" class="form-control" id="exampleInputPassword1">
+              </div>
+            </form>
           </div>
-          <div class="col-2">
+          <div class="modal-footer">
+            <button type="submit" class="btn btn-secondary">Registrarme</button>
           </div>
+          <small>¿Ya tenés una cuenta? <a href="login.html">¡Ingresá!</small></a>
+        </div>
+        <div class="col-2">
         </div>
       </div>
-    </section>
-    <!--Footer-->
-   <footer class="bg-black text-white text-center fs-6">
-    <div class="pt-3">
-      <p>&copy Copyright Yael Nmr 2023</p>          
     </div>
-   </footer>
+  </section>
 
-    <!--JavaScript de Bootstrap-->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous">
+  <!--FOOTER o Pie de Página-->
+  <div class="footer">&copyCopyright <strong>YaelNmr 2023</strong>.</div>
+
+  <!--JavaScript de Bootstrap-->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous">
     </script>
 </body>
+
 </html>

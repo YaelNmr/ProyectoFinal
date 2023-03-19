@@ -1,115 +1,401 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Panel</title>
-    <!--CSS de Bootstrap-->
-    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="style.css">
-    <!--Fuentes GoogleFont-->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,300;1,400;1,500&display=swap" rel="stylesheet">
-    <!--Iconos FontAwesome-->
-    <script src="https://kit.fontawesome.com/45a67b8e7d.js" crossorigin="anonymous"></script>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Panel</title>
+  <!--CSS de Bootstrap-->
+  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css">
+  <!--Fuentes GoogleFont-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,300;1,400;1,500&display=swap"
+    rel="stylesheet">
+  <!--Iconos FontAwesome-->
+  <script src="https://kit.fontawesome.com/45a67b8e7d.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
-    <nav class="navbar navbar-expand-lg bg-violet">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="index.html">
-                <img src="/img/LogoAP.png" alt="Logo" class="w-25">
-              </a>
-              <ul class="list-group list-group-horizontal">             
-                <li class="list-group-item"> 
-                    <!-- Botón que envia al Login -->
-                    <a href="login.html"><i class="fa-solid fa-user text-white"></i></a>
-                </li>
-              </ul>  
-        </div>
+  <!--Barra de Navegación-->
+  <nav class="navbar navbar-expand-lg bg-violet">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html">
+        <img src="/img/LogoAP.png" alt="Logo" class="w-25">
+      </a>
+      <ul class="list-group list-group-horizontal">
+        <li class="list-group-item">
+          <!-- Botón que envia al Login -->
+          <a href="login.html"><i class="fa-solid fa-user text-white"></i></a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <!--Menú edición-->
+  <div class="row menu">
+    <div class="col-1">
+      <div class="foto perfil">
+        <img src="img/pic4.jpg" alt="mi-foto" class="rounded-circle img-fluid">
+      </div>
+      <h5 class="user-name" style="text-align: center;">Yael Nemer</h5>
+      <nav class="vertical" id="list-tab" role="tablist"> <!--Acá empieza la Barra vertical de Iconos-->
+        <ul>
+          <li class="vertical">
+            <a class="list-group-item list-group-item-action active" id="list-redes-list" data-bs-toggle="list"
+              href="#list-redes" role="tab" aria-controls="list-redes">
+              <i class="fa-sharp fa-solid fa-share-nodes"></i></a>
+          </li>
+          <li class="vertical">
+            <a class="list-group-item list-group-item-action" id="list-banner-list" data-bs-toggle="list"
+              href="#list-banner" role="tab" aria-controls="list-banner">
+              <i class="fa-sharp fa-solid fa-image"></i></a>
+          </li>
+          <li class="vertical">
+            <a class="list-group-item list-group-item-action" id="list-info-list" data-bs-toggle="list"
+              href="#list-info" role="tab" aria-controls="list-info">
+              <i class="fa-sharp fa-solid fa-user"></i></a>
+          </li>
+          <li class="vertical">
+            <a class="list-group-item list-group-item-action" id="list-trabajo-list" data-bs-toggle="list"
+              href="#list-trabajo" role="tab" aria-controls="list-trabajo">
+              <i class="fa-sharp fa-solid fa-briefcase"></i></a>
+          </li>
+          <li class="vertical">
+            <a class="list-group-item list-group-item-action" id="list-educación-list" data-bs-toggle="list"
+              href="#list-educación" role="tab" aria-controls="list-educación">
+              <i class="fa-sharp fa-solid fa-graduation-cap"></i></a>
+          </li>
+          <li class="vertical">
+            <a class="list-group-item list-group-item-action" id="list-habilidades-list" data-bs-toggle="list"
+              href="#list-habilidades" role="tab" aria-controls="list-habilidades">
+              <i class="fa-sharp fa-solid fa-wand-magic-sparkles"></i></a>
+          </li>
+          <li class="vertical">
+            <a class="list-group-item list-group-item-action" id="list-proyectos-list" data-bs-toggle="list"
+              href="#list-proyectos" role="tab" aria-controls="list-proyectos">
+              <i class="fa-sharp fa-solid fa-list-check"></i></a>
+          </li>
+        </ul>
       </nav>
-        <div class="container-fluid text-center">
-          <div class="row">
-            <div class="col-1">
-           </div>
-           <div class="col-2 pt-3">
-            <img src="/img/pic4.jpg" alt="foto" class="rounded-circle img-fluid">
-            <h5 class="text-black text-center intro mt-3">
-              ¡Hola, soy Yael! Desarrolladora Full Stack Jr.
-            </h5>
-            <ul class="list-group mt-4">
-              <li class="list-group-item admin"><i class="fa-solid fa-share-nodes"></i> Redes</li>
-              <li class="list-group-item admin"><a href="#" data-bs-toggle="modal" data-bs-target="#bannerModal" class="link"><i class="fa-solid fa-image"></i> Banner</a></li>
-              <li class="list-group-item admin"><i class="fa-solid fa-circle-info"></i> Info</li>
-              <!--aca irian mas lineas, hasta que complete el portfolio y sepa bien que poner-->
-            </ul>
+    </div>
+    <div class="col-11 mt-2">
+      <div class="tab-content" id="nav-tabContent">
+        <!--Redes-->
+        <div class="tab-pane fade show active" id="list-redes" role="tabpanel" aria-labelledby="list-redes-list">
+          <div class="container">
+            <form>
+              <div class="my-3"> <!--FB-->
+                <label for="facebook" class="form-label">Facebook</label>
+                <input type="text" class="form-control" id="facebook">
+              </div>
+              <button type="button" class="btn btn-success">Guardar</button>
+              <button type="button" class="btn btn-danger">Eliminar</button>
+              <button type="button" class="btn btn-primary">Actualizar</button>
+              <div class="my-3"> <!--IG-->
+                <label for="instagram" class="form-label">Instagram</label>
+                <input type="text" class="form-control" id="instagram">
+              </div>
+              <button type="button" class="btn btn-success">Guardar</button>
+              <button type="button" class="btn btn-danger">Eliminar</button>
+              <button type="button" class="btn btn-primary">Actualizar</button>
+              <div class="my-3"> <!--TWITTER-->
+                <label for="twitter" class="form-label">Twitter</label>
+                <input type="text" class="form-control" id="twitter">
+              </div>
+              <button type="button" class="btn btn-success">Guardar</button>
+              <button type="button" class="btn btn-danger">Eliminar</button>
+              <button type="button" class="btn btn-primary">Actualizar</button>
+              <div class="my-3"> <!--GitHub-->
+                <label for="github" class="form-label">GitHub</label>
+                <input type="text" class="form-control" id="github">
+              </div>
+              <button type="button" class="btn btn-success">Guardar</button>
+              <button type="button" class="btn btn-danger">Eliminar</button>
+              <button type="button" class="btn btn-primary">Actualizar</button>
+              <div class="my-3"> <!--Linkedin-->
+                <label for="linkedin" class="form-label">Linkedin</label>
+                <input type="text" class="form-control" id="linkedin">
+              </div>
+              <button type="button" class="btn btn-success">Guardar</button>
+              <button type="button" class="btn btn-danger">Eliminar</button>
+              <button type="button" class="btn btn-primary">Actualizar</button>
+            </form>
           </div>
-          <div class="col-8">
-            <!--Inicio de Banner Modal-->
-            <div class="modal fade" id="bannerModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-              <div class="modal-dialog modal-dialog-centered modal-lg">
-                <div class="modal-content">
-                  <div class="modal-header">
-                    <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                  </div>
-                  <div class="modal-body">
-                    ...
-                  </div>
-                  <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-primary">Save changes</button>
-                  </div>
+        </div>
+        <!--Banner-->
+        <div class="tab-pane fade" id="list-banner" role="tabpanel" aria-labelledby="list-banner-list">
+          <div class="container">
+            <form>
+              <div class="mb-3">
+                <label for="banner" class="form-label">Banner</label>
+                <input class="form-control" type="file" id="banner">
+              </div>
+              <button type="button" class="btn btn-success">Guardar</button>
+              <button type="button" class="btn btn-danger">Eliminar</button>
+              <button type="button" class="btn btn-primary">Actualizar</button>
+            </form>
+          </div>
+        </div>
+        <!--Info, Presentación-->
+        <div class="tab-pane fade" id="list-info" role="tabpanel" aria-labelledby="list-info-list">
+          <div class="container">
+            <form>
+              <div class="mb-3">
+                <label for="info" class="form-label">Info</label>
+                <textarea class="form-control" id="info" style="height: 100px;"></textarea>
+              </div>
+              <button type="button" class="btn btn-success">Guardar</button>
+              <button type="button" class="btn btn-danger">Eliminar</button>
+              <button type="button" class="btn btn-primary">Actualizar</button>
+            </form>
+          </div>
+        </div>
+        <!--Trabajo-->
+        <div class="tab-pane fade" id="list-trabajo" role="tabpanel" aria-labelledby="list-trabajo-list">
+          <div class="container">
+            <form>
+              <div class="my-3"> <!--Kuma-->
+                <label for="trabajoUno" class="form-label">Trabajo</label>
+                <input class="form-control" type="file" id="trabajoUno">
+                <textarea class="form-control" id="info" style="height: 100px;"></textarea>
+              </div>
+              <button type="button" class="btn btn-success">Guardar</button>
+              <button type="button" class="btn btn-danger">Eliminar</button>
+              <button type="button" class="btn btn-primary">Actualizar</button>
+              <div class="my-3"> <!--Atencion cliente-->
+                <label for="trabajoDos" class="form-label">Trabajo</label>
+                <input class="form-control" type="file" id="trabajoDos">
+                <textarea class="form-control" id="info" style="height: 100px;"></textarea>
+              </div>
+              <button type="button" class="btn btn-success">Guardar</button>
+              <button type="button" class="btn btn-danger">Eliminar</button>
+              <button type="button" class="btn btn-primary">Actualizar</button>
+              <div class="my-3"> <!--Otros-->
+                <label for="trabajoTres" class="form-label">Trabajo</label>
+                <input class="form-control" type="file" id="trabajoTres">
+                <textarea class="form-control" id="info" style="height: 100px;"></textarea>
+              </div>
+              <button type="button" class="btn btn-success">Guardar</button>
+              <button type="button" class="btn btn-danger">Eliminar</button>
+              <button type="button" class="btn btn-primary">Actualizar</button>
+            </form>
+          </div>
+        </div>
+        <!--Educación-->
+        <div class="tab-pane fade" id="list-educación" role="tabpanel" aria-labelledby="list-educación-list">
+          <div class="container">
+            <form>
+              <div class="my-3"> <!--ArgPro-->
+                <label for="educaciónUno" class="form-label">Educación</label>
+                <input class="form-control" type="file" id="educaciónUno">
+                <textarea class="form-control" id="info" style="height: 100px;"></textarea>
+              </div>
+              <button type="button" class="btn btn-success">Guardar</button>
+              <button type="button" class="btn btn-danger">Eliminar</button>
+              <button type="button" class="btn btn-primary">Actualizar</button>
+              <div class="my-3"> <!--Profesorado-->
+                <label for="educaciónDos" class="form-label">Educación</label>
+                <input class="form-control" type="file" id="educaciónDos">
+                <textarea class="form-control" id="info" style="height: 100px;"></textarea>
+              </div>
+              <button type="button" class="btn btn-success">Guardar</button>
+              <button type="button" class="btn btn-danger">Eliminar</button>
+              <button type="button" class="btn btn-primary">Actualizar</button>
+              <div class="my-3"> <!--638-->
+                <label for="educaciónTres" class="form-label">Educación</label>
+                <input class="form-control" type="file" id="educaciónTres">
+                <textarea class="form-control" id="info" style="height: 100px;"></textarea>
+              </div>
+              <button type="button" class="btn btn-success">Guardar</button>
+              <button type="button" class="btn btn-danger">Eliminar</button>
+              <button type="button" class="btn btn-primary">Actualizar</button>
+            </form>
+          </div>
+        </div>
+        <!--Habilidades-->
+        <div class="tab-pane fade" id="list-habilidades" role="tabpanel" aria-labelledby="list-habilidades-list">
+          <div class="container">
+            <form>
+              <div class="row">
+                <div class="col-6 my-3"> <!--Skill 1-->
+                  <label for="habilidadesUno" class="form-label">Habilidades</label>
+                  <input type="text" class="form-control" id="habilidadesUno">
+                </div>
+                <div class="col-6 my-3">
+                  <label for="porcentajesUno" class="form-label">Porcentajes</label>
+                  <input type="text" class="form-control" id="porcentajesUno">
                 </div>
               </div>
-            </div><!--Fin de banner modal-->
-
-          </div>
-          <div class="col-1">
-          </div>
-         </div>
-       </div>
-       
-      <!--Formulario de Login-->
-      <section class="login">
-      <div class="container text-center">
-        <div class="row">
-          <div class="col-2">
-          </div>
-          <div class="col-8 formulario-login">
-            <div class="modal-body">
-                <form>
-                    <div class="mb-3">
-                      <label for="exampleInputEmail1" class="form-label">Email</label>
-                      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-                      <div id="emailHelp" class="form-text"></div>
-                    </div>
-                    <div class="mb-3">
-                      <label for="exampleInputPassword1" class="form-label">Contraseña</label>
-                      <input type="password" class="form-control" id="exampleInputPassword1">
-                     </div>                                
-                  </form>
-            </div>
-            <div class="modal-footer">
-                <button type="submit" class="btn btn-secondary">Registrarme</button>
+              <button type="button" class="btn btn-success">Guardar</button>
+              <button type="button" class="btn btn-danger">Eliminar</button>
+              <button type="button" class="btn btn-primary">Actualizar</button>
+              <div class="row">
+                <div class="col-6 my-3"> <!--Skill 2-->
+                  <label for="habilidadesDos" class="form-label">Habilidades</label>
+                  <input type="text" class="form-control" id="habilidadesDos">
+                </div>
+                <div class="col-6 my-3">
+                  <label for="porcentajesDos" class="form-label">Porcentajes</label>
+                  <input type="text" class="form-control" id="porcentajesDos">
+                </div>
               </div>
-              <small>¿Ya tenés una cuenta? <a href="login.html">¡Ingresá!</small></a>
+              <button type="button" class="btn btn-success">Guardar</button>
+              <button type="button" class="btn btn-danger">Eliminar</button>
+              <button type="button" class="btn btn-primary">Actualizar</button>
+              <div class="row">
+                <div class="col-6 my-3"> <!--Skill 3-->
+                  <label for="habilidadesTres" class="form-label">Habilidades</label>
+                  <input type="text" class="form-control" id="habilidadesTres">
+                </div>
+                <div class="col-6 my-3">
+                  <label for="porcentajesTres" class="form-label">Porcentajes</label>
+                  <input type="text" class="form-control" id="porcentajesTres">
+                </div>
+              </div>
+              <button type="button" class="btn btn-success">Guardar</button>
+              <button type="button" class="btn btn-danger">Eliminar</button>
+              <button type="button" class="btn btn-primary">Actualizar</button>
+              <div class="row">
+                <div class="col-6 my-3"> <!--Skill 4-->
+                  <label for="habilidadesCuatro" class="form-label">Habilidades</label>
+                  <input type="text" class="form-control" id="habilidadesCuatro">
+                </div>
+                <div class="col-6 my-3">
+                  <label for="porcentajesCuatro" class="form-label">Porcentajes</label>
+                  <input type="text" class="form-control" id="porcentajesCuatro">
+                </div>
+              </div>
+              <button type="button" class="btn btn-success">Guardar</button>
+              <button type="button" class="btn btn-danger">Eliminar</button>
+              <button type="button" class="btn btn-primary">Actualizar</button>
+              <div class="row">
+                <div class="col-6 my-3"> <!--Skill 5-->
+                  <label for="habilidadesCinco" class="form-label">Habilidades</label>
+                  <input type="text" class="form-control" id="habilidadesCinco">
+                </div>
+                <div class="col-6 my-3">
+                  <label for="porcentajesCinco" class="form-label">Porcentajes</label>
+                  <input type="text" class="form-control" id="porcentajesCinco">
+                </div>
+              </div>
+              <button type="button" class="btn btn-success">Guardar</button>
+              <button type="button" class="btn btn-danger">Eliminar</button>
+              <button type="button" class="btn btn-primary">Actualizar</button>
+              <div class="row">
+                <div class="col-6 my-3"> <!--Skill 6-->
+                  <label for="habilidadesSeis" class="form-label">Habilidades</label>
+                  <input type="text" class="form-control" id="habilidadesSeis">
+                </div>
+                <div class="col-6 my-3">
+                  <label for="porcentajesSeis" class="form-label">Porcentajes</label>
+                  <input type="text" class="form-control" id="porcentajesSeis">
+                </div>
+              </div>
+              <button type="button" class="btn btn-success">Guardar</button>
+              <button type="button" class="btn btn-danger">Eliminar</button>
+              <button type="button" class="btn btn-primary">Actualizar</button>
+              <div class="row">
+                <div class="col-6 my-3"> <!--Skill 7-->
+                  <label for="habilidadesSiete" class="form-label">Habilidades</label>
+                  <input type="text" class="form-control" id="habilidadesSiete">
+                </div>
+                <div class="col-6 my-3">
+                  <label for="porcentajesSiete" class="form-label">Porcentajes</label>
+                  <input type="text" class="form-control" id="porcentajesSiete">
+                </div>
+              </div>
+              <button type="button" class="btn btn-success">Guardar</button>
+              <button type="button" class="btn btn-danger">Eliminar</button>
+              <button type="button" class="btn btn-primary">Actualizar</button>
+              <div class="row">
+                <div class="col-6 my-3"> <!--Skill 8-->
+                  <label for="habilidadesOcho" class="form-label">Habilidades</label>
+                  <input type="text" class="form-control" id="habilidadesOcho">
+                </div>
+                <div class="col-6 my-3">
+                  <label for="porcentajesOcho" class="form-label">Porcentajes</label>
+                  <input type="text" class="form-control" id="porcentajesOcho">
+                </div>
+              </div>
+              <button type="button" class="btn btn-success">Guardar</button>
+              <button type="button" class="btn btn-danger">Eliminar</button>
+              <button type="button" class="btn btn-primary">Actualizar</button>
+              <div class="row">
+                <div class="col-6 my-3"> <!--Skill 9-->
+                  <label for="habilidadesNueve" class="form-label">Habilidades</label>
+                  <input type="text" class="form-control" id="habilidadesNueve">
+                </div>
+                <div class="col-6 my-3">
+                  <label for="porcentajesNueve" class="form-label">Porcentajes</label>
+                  <input type="text" class="form-control" id="porcentajesNueve">
+                </div>
+              </div>
+              <button type="button" class="btn btn-success">Guardar</button>
+              <button type="button" class="btn btn-danger">Eliminar</button>
+              <button type="button" class="btn btn-primary">Actualizar</button>
+              <div class="row">
+                <div class="col-6 my-3"> <!--Skill 10-->
+                  <label for="habilidadesDiez" class="form-label">Habilidades</label>
+                  <input type="text" class="form-control" id="habilidadesDiez">
+                </div>
+                <div class="col-6 my-3">
+                  <label for="porcentajesDiez" class="form-label">Porcentajes</label>
+                  <input type="text" class="form-control" id="porcentajesDiez">
+                </div>
+              </div>
+              <button type="button" class="btn btn-success">Guardar</button>
+              <button type="button" class="btn btn-danger">Eliminar</button>
+              <button type="button" class="btn btn-primary">Actualizar</button>
+              <div class="row">
+                <div class="col-6 my-3"> <!--Skill 11-->
+                  <label for="habilidadesOnce" class="form-label">Habilidades</label>
+                  <input type="text" class="form-control" id="habilidadesOnce">
+                </div>
+                <div class="col-6 my-3">
+                  <label for="porcentajesOnce" class="form-label">Porcentajes</label>
+                  <input type="text" class="form-control" id="porcentajesOnce">
+                </div>
+              </div>
+              <button type="button" class="btn btn-success">Guardar</button>
+              <button type="button" class="btn btn-danger">Eliminar</button>
+              <button type="button" class="btn btn-primary">Actualizar</button>
+            </form>
           </div>
-          <div class="col-2">
+        </div>
+        <!--Proyectos-->
+        <div class="tab-pane fade" id="list-proyectos" role="tabpanel" aria-labelledby="list-proyectos-list">
+          <div class="container">
+            <form>
+              <div class="my-3">
+                <label for="proyectos" class="form-label">Proyectos</label>
+                <input class="form-control" type="file" id="proyectos">
+                <div class="my-3">
+                  <label for="proyectos" class="form-label">Enlace</label>
+                  <input type="text" class="form-control" id="proyectos">
+                </div>
+                <textarea class="form-control" id="info" style="height: 100px;"></textarea>
+              </div>
+              <button type="button" class="btn btn-success">Guardar</button>
+              <button type="button" class="btn btn-danger">Eliminar</button>
+              <button type="button" class="btn btn-primary">Actualizar</button>
+            </form>
           </div>
         </div>
       </div>
-    </section>
-    <!--Footer-->
-   <footer class="bg-black text-white text-center fs-6">
-    <div class="pt-3">
-      <p>&copy Copyright Yael Nmr 2023</p>          
     </div>
-   </footer>
+  </div>
+  </div>
+  <!--FOOTER o Pie de Página-->
+  <div class="footer">&copyCopyright <strong>YaelNmr 2023</strong>.</div>
 
-    <!--JavaScript de Bootstrap-->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous">
+  <!--JavaScript de Bootstrap-->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous">
     </script>
+
 </body>
+
 </html>

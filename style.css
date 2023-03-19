@@ -4,6 +4,8 @@
     font-family: 'Roboto', sans-serif;
 }
 
+/*INDEX*//*INDEX*//*INDEX*//*INDEX*//*INDEX*//*INDEX*//*INDEX*//*INDEX*//*INDEX*//*INDEX*//*INDEX*//*INDEX*/
+
 /*Barra de navegación*/
 .bg-violet {
     background-color: #000000;
@@ -55,13 +57,13 @@ h1.intro{
 }
          /*Fin Presentación*/
 
-/*Sección Experiencia y Seccion Educación*/
+/*Sección Experiencia y Sección Educación*/
 .card {
   margin: 10px 10px;
   border-style: solid;
   box-shadow: 10px 10px #888181;
 }
-        /*Fin seccion experiencia y educacion*/
+        /*Fin seccion experiencia y educación*/
 
 /*Sección Habilidades*/
        /*Estructura de los Circulos*/
@@ -113,7 +115,7 @@ h1 {
     font-weight: 600;
     color: #8b8b8b; }
 
-    @-webkit-keyframes colorload {
+    @keyframes colorload {
       0% {
         opacity: 0;
         transform: rotate(0deg); }
@@ -167,7 +169,7 @@ h1 {
   align-items: center;
   justify-content: center; 
 }
-  /* Fin seccion proyectos*/
+     /*Fin seccion proyectos*/
 
   /*FOOTER*/
   .footer {
@@ -175,28 +177,49 @@ h1 {
     bottom: 0;
     left: 0;
     padding: 1rem;
-    background-color: #efefef;
+    background-color: #c5c4c4;
     text-align: center;
   }
   /*Fin Footer*/
 
+/*FIN DEL INDEX*//*FIN DEL INDEX*//*FIN DEL INDEX*//*FIN DEL INDEX*//*FIN DEL INDEX*//*FIN DEL INDEX*//*FIN DEL INDEX*//*FIN DEL INDEX*/
 
 
 /*Página LOGIN*/
 .login{
-  height: 80vh;
+  height: 76.9vh;
 }
 .formulario-login{
   margin-top: 10%;
 }
 /*Fin login*/
 
-/*PANEL, Botones Banner Modal, de redes, etc del panel*/
-.admin{
-  font-size: 1.5rem;
+/*Página REGISTRO*/
+.formulario-registro{
+  margin-top: 10%;
 }
-.link{
-  text-decoration: none;
-  color: #000000;
+/*fin Registro*/
+
+
+/*PANEL, Menu edicion, Botones Taps (no modal), banner, de redes, etc del panel*/
+.menu{  /**Esto es el <div class="row menu"> linea 38*/
+  margin-top: 25px;
+  margin-right: 25px;
+  margin-bottom: 100px;
+  margin-left: 25px;
+}
+
+nav.vertical{
+  float: left;
+  margin-left: 0.5rem;
+  margin-top: 1rem;
+}
+
+li.vertical{
+  display: block;
+  margin: 0;
+  writing-mode: vertical;
+  padding: 0.75rem 0;
+  font-size: 1.25rem;
 }
 /*Fin panel*/
