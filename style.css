@@ -194,6 +194,9 @@ h1 {
 /*Fin login*/
 
 /*Página REGISTRO*/
+.registro{
+  height: 76.9vh;
+}
 .formulario-registro{
   margin-top: 10%;
 }
