@@ -28,28 +28,15 @@
       </a>
       <ul class="list-group list-group-horizontal">
         <li class="list-group-item">
-          <!-- Botón que envia al Login (desde el index) -->
-          <!--<a href="login.html"><i class="fa-solid fa-user text-white"></i></a>-->
+          <a href=""><i class="fa-solid fa-user text-white"></i></a> <!-- Cambiar este botón que enviaba al Login -->
         </li>
       </ul>
     </div>
-    <div class="dropdown">
-      <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-        Cerrar Sesión
-      </button>
-      <ul class="dropdown-menu" style="margin-left: -20%;">
-        <li><a class="dropdown-item" href="#">Salir</a></li>
-      </ul>
-    </div>
   </nav>
-  <!--Menú edición-->
+  <!--Barra lateral de iconos-->
   <div class="row menu">
     <div class="col-1">
-      <div class="foto perfil">
-        <img src="img/pic4.jpg" alt="mi-foto" class="rounded-circle img-fluid">
-      </div>
-      <h5 class="user-name" style="text-align: center;">Yael Nemer</h5>
-      <nav class="vertical" id="list-tab" role="tablist"> <!--Acá empieza la Barra vertical de Iconos-->
+      <nav class="vertical" id="list-tab" role="tablist">
         <ul>
           <li class="vertical">
             <a class="list-group-item list-group-item-action active" id="list-redes-list" data-bs-toggle="list"
@@ -84,10 +71,10 @@
           <li class="vertical">
             <a class="list-group-item list-group-item-action" id="list-proyectos-list" data-bs-toggle="list"
               href="#list-proyectos" role="tab" aria-controls="list-proyectos">
-              <i class="fa-sharp fa-solid fa-list-check"></i></a> <!--Fin Barra vertical de íconos-->
+              <i class="fa-sharp fa-solid fa-list-check"></i></a>
           </li>
         </ul>
-      </nav>
+      </nav> <!--Fin Barra lateral de íconos-->
     </div>
     <!--Botones edición-->
     <div class="col-11 mt-2">
@@ -97,57 +84,57 @@
           <div class="container">
             <form>
               <div class="my-3"> <!--FB-->
-                <label for="facebook" class="form-label">Facebook</label>
+                <label for="facebook" class="form-label">Facebook Link</label>
                 <input type="text" class="form-control" id="facebook">
+                <button type="button" class="btn btn-success">Guardar</button>
+                <button type="button" class="btn btn-danger">Cancelar</button>
               </div>
-              <button type="button" class="btn btn-success">Guardar</button>
-              <button type="button" class="btn btn-danger">Eliminar</button>
-              <button type="button" class="btn btn-primary">Actualizar</button>
               <div class="my-3"> <!--IG-->
-                <label for="instagram" class="form-label">Instagram</label>
+                <label for="instagram" class="form-label">Instagram Link</label>
                 <input type="text" class="form-control" id="instagram">
+                <button type="button" class="btn btn-success">Guardar</button>
+                <button type="button" class="btn btn-danger">Cancelar</button>
               </div>
-              <button type="button" class="btn btn-success">Guardar</button>
-              <button type="button" class="btn btn-danger">Eliminar</button>
-              <button type="button" class="btn btn-primary">Actualizar</button>
               <div class="my-3"> <!--TWITTER-->
-                <label for="twitter" class="form-label">Twitter</label>
+                <label for="twitter" class="form-label">Twitter Link</label>
                 <input type="text" class="form-control" id="twitter">
+                <button type="button" class="btn btn-success">Guardar</button>
+                <button type="button" class="btn btn-danger">Cancelar</button>
               </div>
-              <button type="button" class="btn btn-success">Guardar</button>
-              <button type="button" class="btn btn-danger">Eliminar</button>
-              <button type="button" class="btn btn-primary">Actualizar</button>
               <div class="my-3"> <!--GitHub-->
-                <label for="github" class="form-label">GitHub</label>
+                <label for="github" class="form-label">GitHub Link</label>
                 <input type="text" class="form-control" id="github">
+                <button type="button" class="btn btn-success">Guardar</button>
+                <button type="button" class="btn btn-danger">Cancelar</button>
               </div>
-              <button type="button" class="btn btn-success">Guardar</button>
-              <button type="button" class="btn btn-danger">Eliminar</button>
-              <button type="button" class="btn btn-primary">Actualizar</button>
               <div class="my-3"> <!--Linkedin-->
-                <label for="linkedin" class="form-label">Linkedin</label>
+                <label for="linkedin" class="form-label">Linkedin Link</label>
                 <input type="text" class="form-control" id="linkedin">
+                <button type="button" class="btn btn-success">Guardar</button>
+                <button type="button" class="btn btn-danger">Cancelar</button>
               </div>
-              <button type="button" class="btn btn-success">Guardar</button>
-              <button type="button" class="btn btn-danger">Eliminar</button>
-              <button type="button" class="btn btn-primary">Actualizar</button>
             </form>
           </div>
-        </div>  <!--Fin Redes-->
+        </div> <!--Fin Redes-->
         <!--Banner-->
         <div class="tab-pane fade" id="list-banner" role="tabpanel" aria-labelledby="list-banner-list">
           <div class="container">
             <form>
               <div class="my-3">
-                <label for="banner" class="form-label">Banner</label>
+                <label for="banner" class="form-label">Img banner</label>
                 <input class="form-control" type="file" id="banner">
+                <button type="button" class="btn btn-success">Guardar</button>
+                <button type="button" class="btn btn-danger">Cancelar</button>
               </div>
-              <button type="button" class="btn btn-success">Guardar</button>
-              <button type="button" class="btn btn-danger">Eliminar</button>
-              <button type="button" class="btn btn-primary">Actualizar</button>
+              <div class="my-3">
+                <label for="info" class="form-label">Texto-Saludo</label>
+                <textarea class="form-control" id="info" style="height: 100px;"></textarea>
+                <button type="button" class="btn btn-success">Guardar</button>
+                <button type="button" class="btn btn-danger">Cancelar</button>
+              </div>
             </form>
           </div>
-        </div>   <!--Fin Banner-->
+        </div> <!--Fin Banner-->
         <!--Info, Presentación-->
         <div class="tab-pane fade" id="list-info" role="tabpanel" aria-labelledby="list-info-list">
           <div class="container">
@@ -155,307 +142,301 @@
               <div class="my-3">
                 <label for="info" class="form-label">Acerca de Mí</label>
                 <textarea class="form-control" id="info" style="height: 100px;"></textarea>
+                <button type="button" class="btn btn-success">Guardar</button>
+                <button type="button" class="btn btn-danger">Cancelar</button>
               </div>
-              <button type="button" class="btn btn-success">Guardar</button>
-              <button type="button" class="btn btn-danger">Eliminar</button>
-              <button type="button" class="btn btn-primary">Actualizar</button>
               <div class="my-3">
                 <label for="info" class="form-label">Foto perfil</label>
                 <input class="form-control" type="file" id="info">
+                <button type="button" class="btn btn-success">Guardar</button>
+                <button type="button" class="btn btn-danger">Cancelar</button>
               </div>
-              <button type="button" class="btn btn-success">Guardar</button>
-              <button type="button" class="btn btn-danger">Eliminar</button>
-              <button type="button" class="btn btn-primary">Actualizar</button>
             </form>
           </div>
-        </div>   <!--Fin Presentación-->
+        </div> <!--Fin Presentación-->
         <!--Trabajo-->
         <div class="tab-pane fade" id="list-trabajo" role="tabpanel" aria-labelledby="list-trabajo-list">
           <div class="container">
             <form>
               <div class="my-3"> <!--Kuma-->
-                <label for="trabajoUno" class="form-label">Trabajo 1-Kuma</label>
+                <label for="trabajoUno" class="form-label">Trabajo 1</label>
                 <textarea class="form-control" id="info" style="height: 100px;"></textarea>
+                <button type="button" class="btn btn-success">Guardar</button>
+                <button type="button" class="btn btn-danger">Cancelar</button>
               </div>
-              <button type="button" class="btn btn-success">Guardar</button>
-              <button type="button" class="btn btn-danger">Eliminar</button>
-              <button type="button" class="btn btn-primary">Actualizar</button>
               <div class="my-3">
-                <label for="trabajoUno" class="form-label">Foto Kuma</label>
+                <label for="trabajoUno" class="form-label">Logo</label>
                 <input class="form-control" type="file" id="trabajoUno">
+                <button type="button" class="btn btn-success">Guardar</button>
+                <button type="button" class="btn btn-danger">Cancelar</button>
               </div>
-              <button type="button" class="btn btn-success">Guardar</button>
-              <button type="button" class="btn btn-danger">Eliminar</button>
-              <button type="button" class="btn btn-primary">Actualizar</button>
               <!--Fin Kuma-->
               <div class="my-3"> <!--Atención al cliente-->
                 <label for="trabajoDos" class="form-label">Trabajo 2</label>
                 <textarea class="form-control" id="info" style="height: 100px;"></textarea>
+                <button type="button" class="btn btn-success">Guardar</button>
+                <button type="button" class="btn btn-danger">Cancelar</button>
               </div>
-              <button type="button" class="btn btn-success">Guardar</button>
-              <button type="button" class="btn btn-danger">Eliminar</button>
-              <button type="button" class="btn btn-primary">Actualizar</button>
               <div class="my-3">
-                <label for="trabajoDos" class="form-label">Foto Trabajo2</label>
+                <label for="trabajoDos" class="form-label">Logo</label>
                 <input class="form-control" type="file" id="trabajoDos">
+                <button type="button" class="btn btn-success">Guardar</button>
+                <button type="button" class="btn btn-danger">Cancelar</button>
               </div>
-              <button type="button" class="btn btn-success">Guardar</button>
-              <button type="button" class="btn btn-danger">Eliminar</button>
-              <button type="button" class="btn btn-primary">Actualizar</button>
               <!--Fin Atencion cliente-->
               <div class="my-3"> <!--Otras experiencias-->
                 <label for="trabajoTres" class="form-label">Trabajo 3</label>
                 <textarea class="form-control" id="info" style="height: 100px;"></textarea>
+                <button type="button" class="btn btn-success">Guardar</button>
+                <button type="button" class="btn btn-danger">Cancelar</button>
               </div>
-              <button type="button" class="btn btn-success">Guardar</button>
-              <button type="button" class="btn btn-danger">Eliminar</button>
-              <button type="button" class="btn btn-primary">Actualizar</button>
               <div class="my-3">
-                <label for="trabajoTres" class="form-label">Foto Trabajo3</label>
+                <label for="trabajoTres" class="form-label">Logo</label>
                 <input class="form-control" type="file" id="trabajoTres">
+                <button type="button" class="btn btn-success">Guardar</button>
+                <button type="button" class="btn btn-danger">Cancelar</button>
               </div>
-              <button type="button" class="btn btn-success">Guardar</button>
-              <button type="button" class="btn btn-danger">Eliminar</button>
-              <button type="button" class="btn btn-primary">Actualizar</button>
               <!--Fin Otras experiencias-->
             </form>
           </div>
-        </div>  <!--Fin Trabajo-->
+        </div> <!--Fin Trabajo-->
         <!--Educación-->
         <div class="tab-pane fade" id="list-educación" role="tabpanel" aria-labelledby="list-educación-list">
           <div class="container">
             <form>
               <div class="my-3"> <!--ArgPro-->
-                <label for="" class="form-label">Argentina Programa</label>
+                <label for="" class="form-label">Estudio 1</label>
                 <textarea class="form-control" id="info" style="height: 100px;"></textarea>
+                <button type="button" class="btn btn-success">Guardar</button>
+                <button type="button" class="btn btn-danger">Cancelar</button>
               </div>
-              <button type="button" class="btn btn-success">Guardar</button>
-              <button type="button" class="btn btn-danger">Eliminar</button>
-              <button type="button" class="btn btn-primary">Actualizar</button>
               <div class="my-3">
-                <label for="educaciónUno" class="form-label">Logo AP</label>
+                <label for="educaciónUno" class="form-label">Logo</label>
                 <input class="form-control" type="file" id="educaciónUno">
+                <button type="button" class="btn btn-success">Guardar</button>
+                <button type="button" class="btn btn-danger">Cancelar</button>
               </div>
-              <button type="button" class="btn btn-success">Guardar</button>
-              <button type="button" class="btn btn-danger">Eliminar</button>
-              <button type="button" class="btn btn-primary">Actualizar</button>
               <!--Fin ArgPro-->
               <div class="my-3"> <!--Profesorado-->
-                <label for="educaciónDos" class="form-label">Profesorado</label>
+                <label for="educaciónDos" class="form-label">Estudio 2</label>
                 <textarea class="form-control" id="info" style="height: 100px;"></textarea>
+                <button type="button" class="btn btn-success">Guardar</button>
+                <button type="button" class="btn btn-danger">Cancelar</button>
               </div>
-              <button type="button" class="btn btn-success">Guardar</button>
-              <button type="button" class="btn btn-danger">Eliminar</button>
-              <button type="button" class="btn btn-primary">Actualizar</button>
               <div class="my-3">
-                <label for="educaciónDos" class="form-label">Logo Cossettini</label>
+                <label for="educaciónDos" class="form-label">Logo</label>
                 <input class="form-control" type="file" id="educaciónDos">
+                <button type="button" class="btn btn-success">Guardar</button>
+                <button type="button" class="btn btn-danger">Cancelar</button>
               </div>
-              <button type="button" class="btn btn-success">Guardar</button>
-              <button type="button" class="btn btn-danger">Eliminar</button>
-              <button type="button" class="btn btn-primary">Actualizar</button>
               <!--Fin Profesorado-->
               <div class="my-3"> <!--638-->
-                <label for="educaciónTres" class="form-label">Secundario</label>
+                <label for="educaciónTres" class="form-label">Estudio 3</label>
                 <textarea class="form-control" id="info" style="height: 100px;"></textarea>
+                <button type="button" class="btn btn-success">Guardar</button>
+                <button type="button" class="btn btn-danger">Cancelar</button>
               </div>
-              <button type="button" class="btn btn-success">Guardar</button>
-              <button type="button" class="btn btn-danger">Eliminar</button>
-              <button type="button" class="btn btn-primary">Actualizar</button>
               <div class="my-3">
-                <label for="educaciónTres" class="form-label">LogoEET638</label>
+                <label for="educaciónTres" class="form-label">Logo</label>
                 <input class="form-control" type="file" id="educaciónTres">
+                <button type="button" class="btn btn-success">Guardar</button>
+                <button type="button" class="btn btn-danger">Cancelar</button>
               </div>
-              <button type="button" class="btn btn-success">Guardar</button>
-              <button type="button" class="btn btn-danger">Eliminar</button>
-              <button type="button" class="btn btn-primary">Actualizar</button>
               <!--Fin 638-->
             </form>
           </div>
-        </div>  <!--Fin Educación-->
+        </div> <!--Fin Educación-->
         <!--Habilidades-->
         <div class="tab-pane fade" id="list-habilidades" role="tabpanel" aria-labelledby="list-habilidades-list">
           <div class="container">
             <form>
               <div class="row">
                 <div class="col-6 my-3"> <!--Skill 1-->
-                  <label for="habilidadesUno" class="form-label">Habilidades</label>
+                  <label for="habilidadesUno" class="form-label">Habilidad 1</label>
                   <input type="text" class="form-control" id="habilidadesUno">
+                  <button type="button" class="btn btn-success">Guardar</button>
+                  <button type="button" class="btn btn-danger">Cancelar</button>
                 </div>
                 <div class="col-6 my-3">
-                  <label for="porcentajesUno" class="form-label">Porcentajes</label>
+                  <label for="porcentajesUno" class="form-label">Porcentaje</label>
                   <input type="text" class="form-control" id="porcentajesUno">
+                  <button type="button" class="btn btn-success">Guardar</button>
+                  <button type="button" class="btn btn-danger">Cancelar</button>
                 </div>
               </div>
-              <button type="button" class="btn btn-success">Guardar</button>
-              <button type="button" class="btn btn-danger">Eliminar</button>
-              <button type="button" class="btn btn-primary">Actualizar</button>
               <div class="row">
                 <div class="col-6 my-3"> <!--Skill 2-->
-                  <label for="habilidadesDos" class="form-label">Habilidades</label>
-                  <input type="text" class="form-control" id="habilidadesDos">
+                  <label for="habilidadesUno" class="form-label">Habilidad 2</label>
+                  <input type="text" class="form-control" id="habilidadesUno">
+                  <button type="button" class="btn btn-success">Guardar</button>
+                  <button type="button" class="btn btn-danger">Cancelar</button>
                 </div>
                 <div class="col-6 my-3">
-                  <label for="porcentajesDos" class="form-label">Porcentajes</label>
-                  <input type="text" class="form-control" id="porcentajesDos">
+                  <label for="porcentajesUno" class="form-label">Porcentaje</label>
+                  <input type="text" class="form-control" id="porcentajesUno">
+                  <button type="button" class="btn btn-success">Guardar</button>
+                  <button type="button" class="btn btn-danger">Cancelar</button>
                 </div>
               </div>
-              <button type="button" class="btn btn-success">Guardar</button>
-              <button type="button" class="btn btn-danger">Eliminar</button>
-              <button type="button" class="btn btn-primary">Actualizar</button>
               <div class="row">
                 <div class="col-6 my-3"> <!--Skill 3-->
-                  <label for="habilidadesTres" class="form-label">Habilidades</label>
-                  <input type="text" class="form-control" id="habilidadesTres">
+                  <label for="habilidadesUno" class="form-label">Habilidad 3</label>
+                  <input type="text" class="form-control" id="habilidadesUno">
+                  <button type="button" class="btn btn-success">Guardar</button>
+                  <button type="button" class="btn btn-danger">Cancelar</button>
                 </div>
                 <div class="col-6 my-3">
-                  <label for="porcentajesTres" class="form-label">Porcentajes</label>
-                  <input type="text" class="form-control" id="porcentajesTres">
+                  <label for="porcentajesUno" class="form-label">Porcentaje</label>
+                  <input type="text" class="form-control" id="porcentajesUno">
+                  <button type="button" class="btn btn-success">Guardar</button>
+                  <button type="button" class="btn btn-danger">Cancelar</button>
                 </div>
               </div>
-              <button type="button" class="btn btn-success">Guardar</button>
-              <button type="button" class="btn btn-danger">Eliminar</button>
-              <button type="button" class="btn btn-primary">Actualizar</button>
               <div class="row">
                 <div class="col-6 my-3"> <!--Skill 4-->
-                  <label for="habilidadesCuatro" class="form-label">Habilidades</label>
-                  <input type="text" class="form-control" id="habilidadesCuatro">
+                  <label for="habilidadesUno" class="form-label">Habilidad 4</label>
+                  <input type="text" class="form-control" id="habilidadesUno">
+                  <button type="button" class="btn btn-success">Guardar</button>
+                  <button type="button" class="btn btn-danger">Cancelar</button>
                 </div>
                 <div class="col-6 my-3">
-                  <label for="porcentajesCuatro" class="form-label">Porcentajes</label>
-                  <input type="text" class="form-control" id="porcentajesCuatro">
+                  <label for="porcentajesUno" class="form-label">Porcentaje</label>
+                  <input type="text" class="form-control" id="porcentajesUno">
+                  <button type="button" class="btn btn-success">Guardar</button>
+                  <button type="button" class="btn btn-danger">Cancelar</button>
                 </div>
               </div>
-              <button type="button" class="btn btn-success">Guardar</button>
-              <button type="button" class="btn btn-danger">Eliminar</button>
-              <button type="button" class="btn btn-primary">Actualizar</button>
               <div class="row">
                 <div class="col-6 my-3"> <!--Skill 5-->
-                  <label for="habilidadesCinco" class="form-label">Habilidades</label>
-                  <input type="text" class="form-control" id="habilidadesCinco">
+                  <label for="habilidadesUno" class="form-label">Habilidad 5</label>
+                  <input type="text" class="form-control" id="habilidadesUno">
+                  <button type="button" class="btn btn-success">Guardar</button>
+                  <button type="button" class="btn btn-danger">Cancelar</button>
                 </div>
                 <div class="col-6 my-3">
-                  <label for="porcentajesCinco" class="form-label">Porcentajes</label>
-                  <input type="text" class="form-control" id="porcentajesCinco">
+                  <label for="porcentajesUno" class="form-label">Porcentaje</label>
+                  <input type="text" class="form-control" id="porcentajesUno">
+                  <button type="button" class="btn btn-success">Guardar</button>
+                  <button type="button" class="btn btn-danger">Cancelar</button>
                 </div>
               </div>
-              <button type="button" class="btn btn-success">Guardar</button>
-              <button type="button" class="btn btn-danger">Eliminar</button>
-              <button type="button" class="btn btn-primary">Actualizar</button>
               <div class="row">
                 <div class="col-6 my-3"> <!--Skill 6-->
-                  <label for="habilidadesSeis" class="form-label">Habilidades</label>
-                  <input type="text" class="form-control" id="habilidadesSeis">
+                  <label for="habilidadesUno" class="form-label">Habilidad 6</label>
+                  <input type="text" class="form-control" id="habilidadesUno">
+                  <button type="button" class="btn btn-success">Guardar</button>
+                  <button type="button" class="btn btn-danger">Cancelar</button>
                 </div>
                 <div class="col-6 my-3">
-                  <label for="porcentajesSeis" class="form-label">Porcentajes</label>
-                  <input type="text" class="form-control" id="porcentajesSeis">
+                  <label for="porcentajesUno" class="form-label">Porcentaje</label>
+                  <input type="text" class="form-control" id="porcentajesUno">
+                  <button type="button" class="btn btn-success">Guardar</button>
+                  <button type="button" class="btn btn-danger">Cancelar</button>
                 </div>
               </div>
-              <button type="button" class="btn btn-success">Guardar</button>
-              <button type="button" class="btn btn-danger">Eliminar</button>
-              <button type="button" class="btn btn-primary">Actualizar</button>
               <div class="row">
-                <div class="col-6 my-3"> <!--Skill 7-->
-                  <label for="habilidadesSiete" class="form-label">Habilidades</label>
-                  <input type="text" class="form-control" id="habilidadesSiete">
+                <div class="col-6 my-3"> <!--Skill 77-->
+                  <label for="habilidadesUno" class="form-label">Habilidad 7</label>
+                  <input type="text" class="form-control" id="habilidadesUno">
+                  <button type="button" class="btn btn-success">Guardar</button>
+                  <button type="button" class="btn btn-danger">Cancelar</button>
                 </div>
                 <div class="col-6 my-3">
-                  <label for="porcentajesSiete" class="form-label">Porcentajes</label>
-                  <input type="text" class="form-control" id="porcentajesSiete">
+                  <label for="porcentajesUno" class="form-label">Porcentaje</label>
+                  <input type="text" class="form-control" id="porcentajesUno">
+                  <button type="button" class="btn btn-success">Guardar</button>
+                  <button type="button" class="btn btn-danger">Cancelar</button>
                 </div>
               </div>
-              <button type="button" class="btn btn-success">Guardar</button>
-              <button type="button" class="btn btn-danger">Eliminar</button>
-              <button type="button" class="btn btn-primary">Actualizar</button>
               <div class="row">
                 <div class="col-6 my-3"> <!--Skill 8-->
-                  <label for="habilidadesOcho" class="form-label">Habilidades</label>
-                  <input type="text" class="form-control" id="habilidadesOcho">
+                  <label for="habilidadesUno" class="form-label">Habilidad 8</label>
+                  <input type="text" class="form-control" id="habilidadesUno">
+                  <button type="button" class="btn btn-success">Guardar</button>
+                  <button type="button" class="btn btn-danger">Cancelar</button>
                 </div>
                 <div class="col-6 my-3">
-                  <label for="porcentajesOcho" class="form-label">Porcentajes</label>
-                  <input type="text" class="form-control" id="porcentajesOcho">
+                  <label for="porcentajesUno" class="form-label">Porcentaje</label>
+                  <input type="text" class="form-control" id="porcentajesUno">
+                  <button type="button" class="btn btn-success">Guardar</button>
+                  <button type="button" class="btn btn-danger">Cancelar</button>
                 </div>
               </div>
-              <button type="button" class="btn btn-success">Guardar</button>
-              <button type="button" class="btn btn-danger">Eliminar</button>
-              <button type="button" class="btn btn-primary">Actualizar</button>
               <div class="row">
                 <div class="col-6 my-3"> <!--Skill 9-->
-                  <label for="habilidadesNueve" class="form-label">Habilidades</label>
-                  <input type="text" class="form-control" id="habilidadesNueve">
+                  <label for="habilidadesUno" class="form-label">Habilidad 9</label>
+                  <input type="text" class="form-control" id="habilidadesUno">
+                  <button type="button" class="btn btn-success">Guardar</button>
+                  <button type="button" class="btn btn-danger">Cancelar</button>
                 </div>
                 <div class="col-6 my-3">
-                  <label for="porcentajesNueve" class="form-label">Porcentajes</label>
-                  <input type="text" class="form-control" id="porcentajesNueve">
+                  <label for="porcentajesUno" class="form-label">Porcentaje</label>
+                  <input type="text" class="form-control" id="porcentajesUno">
+                  <button type="button" class="btn btn-success">Guardar</button>
+                  <button type="button" class="btn btn-danger">Cancelar</button>
                 </div>
               </div>
-              <button type="button" class="btn btn-success">Guardar</button>
-              <button type="button" class="btn btn-danger">Eliminar</button>
-              <button type="button" class="btn btn-primary">Actualizar</button>
               <div class="row">
                 <div class="col-6 my-3"> <!--Skill 10-->
-                  <label for="habilidadesDiez" class="form-label">Habilidades</label>
-                  <input type="text" class="form-control" id="habilidadesDiez">
+                  <label for="habilidadesUno" class="form-label">Habilidad 10</label>
+                  <input type="text" class="form-control" id="habilidadesUno">
+                  <button type="button" class="btn btn-success">Guardar</button>
+                  <button type="button" class="btn btn-danger">Cancelar</button>
                 </div>
                 <div class="col-6 my-3">
-                  <label for="porcentajesDiez" class="form-label">Porcentajes</label>
-                  <input type="text" class="form-control" id="porcentajesDiez">
+                  <label for="porcentajesUno" class="form-label">Porcentaje</label>
+                  <input type="text" class="form-control" id="porcentajesUno">
+                  <button type="button" class="btn btn-success">Guardar</button>
+                  <button type="button" class="btn btn-danger">Cancelar</button>
                 </div>
               </div>
-              <button type="button" class="btn btn-success">Guardar</button>
-              <button type="button" class="btn btn-danger">Eliminar</button>
-              <button type="button" class="btn btn-primary">Actualizar</button>
               <div class="row">
                 <div class="col-6 my-3"> <!--Skill 11-->
-                  <label for="habilidadesOnce" class="form-label">Habilidades</label>
-                  <input type="text" class="form-control" id="habilidadesOnce">
+                  <label for="habilidadesUno" class="form-label">Habilidad 11</label>
+                  <input type="text" class="form-control" id="habilidadesUno">
+                  <button type="button" class="btn btn-success">Guardar</button>
+                  <button type="button" class="btn btn-danger">Cancelar</button>
                 </div>
                 <div class="col-6 my-3">
-                  <label for="porcentajesOnce" class="form-label">Porcentajes</label>
-                  <input type="text" class="form-control" id="porcentajesOnce">
+                  <label for="porcentajesUno" class="form-label">Porcentaje</label>
+                  <input type="text" class="form-control" id="porcentajesUno">
+                  <button type="button" class="btn btn-success">Guardar</button>
+                  <button type="button" class="btn btn-danger">Cancelar</button>
                 </div>
               </div>
-              <button type="button" class="btn btn-success">Guardar</button>
-              <button type="button" class="btn btn-danger">Eliminar</button>
-              <button type="button" class="btn btn-primary">Actualizar</button>
             </form>
           </div>
-        </div>   <!--Fin Habilidades-->
+        </div> <!--Fin Habilidades-->
         <!--Proyectos-->
         <div class="tab-pane fade" id="list-proyectos" role="tabpanel" aria-labelledby="list-proyectos-list">
           <div class="container">
             <form>
-              <div class="my-3"> 
+              <div class="my-3">
                 <label for="proyecto" class="form-label">Foto Proyecto</label>
                 <input class="form-control" type="file" id="proyecto">
+                <button type="button" class="btn btn-success">Guardar</button>
+              <button type="button" class="btn btn-danger">Cancelar</button>
               </div>
-              <button type="button" class="btn btn-success">Guardar</button>
-              <button type="button" class="btn btn-danger">Eliminar</button>
-              <button type="button" class="btn btn-primary">Actualizar</button>
               <div class="my-3">
                 <label for="proyecto" class="form-label">Mí Proyecto</label>
                 <textarea class="form-control" id="info" style="height: 100px;"></textarea>
-              </div>
-              <button type="button" class="btn btn-success">Guardar</button>
-              <button type="button" class="btn btn-danger">Eliminar</button>
-              <button type="button" class="btn btn-primary">Actualizar</button>
+                <button type="button" class="btn btn-success">Guardar</button>
+              <button type="button" class="btn btn-danger">Cancelar</button>
+              </div>            
               <div class="my-3">
                 <label for="proyecto" class="form-label">Enlace</label>
                 <input type="text" class="form-control" id="proyecto">
-              </div>
-              <button type="button" class="btn btn-success">Guardar</button>
-              <button type="button" class="btn btn-danger">Eliminar</button>
-              <button type="button" class="btn btn-primary">Actualizar</button>
+                <button type="button" class="btn btn-success">Guardar</button>
+              <button type="button" class="btn btn-danger">Cancelar</button>
+              </div>             
             </form>
           </div>
         </div><!--Fin Poyectos-->
       </div>
     </div>
     <!--Fin Botones edición-->
-  </div>  <!--Fin Menú edición-->
-  
+  </div> <!--Fin Menú edición-->
+
   <!--FOOTER o Pie de Página-->
   <div class="footer">&copyCopyright <strong>Yael Nemer 2023</strong>.</div>
 
